@@ -15,7 +15,7 @@ const SearchList = ({ data, onSelect }) => {
     if (newSuggestions.length > 0) {
       setSuggestions(newSuggestions);
     } else {
-      setSuggestions(newSuggestions);
+      setSuggestions([]);
     }
   }, [wordEntered, data]);
 
