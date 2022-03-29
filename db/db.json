@@ -1,1 +1,62 @@
-{"savedApps":[{"name":"NopenSpeed","icon":""},{"name":"AWS","icon":"aws"},{"name":"slack","icon":"slack"},{"name":"Nginx","icon":"nginx"},{"name":"Notion","icon":"notion"}],"apps":[{"name":"Notion","icon":"notion"},{"name":"NopenSpeed","icon":""},{"name":"slack","icon":"slack"},{"name":"Jira","icon":"jira"},{"name":"MS Azure","icon":"azure"},{"name":"Nginx","icon":"nginx"},{"name":"Zoom","icon":"zoom"},{"name":"webpack","icon":"webpack"},{"name":"AWS","icon":"aws"}]}
+{
+    "savedApps": [
+        {
+            "name": "NopenSpeed",
+            "icon": ""
+        },
+        {
+            "name": "AWS",
+            "icon": "aws"
+        },
+        {
+            "name": "slack",
+            "icon": "slack"
+        },
+        {
+            "name": "Nginx",
+            "icon": "nginx"
+        },
+        {
+            "name": "Notion",
+            "icon": "notion"
+        }
+    ],
+    "apps": [
+        {
+            "name": "Notion",
+            "icon": "notion"
+        },
+        {
+            "name": "NopenSpeed",
+            "icon": ""
+        },
+        {
+            "name": "slack",
+            "icon": "slack"
+        },
+        {
+            "name": "Jira",
+            "icon": "jira"
+        },
+        {
+            "name": "MS Azure",
+            "icon": "azure"
+        },
+        {
+            "name": "Nginx",
+            "icon": "nginx"
+        },
+        {
+            "name": "Zoom",
+            "icon": "zoom"
+        },
+        {
+            "name": "webpack",
+            "icon": "webpack"
+        },
+        {
+            "name": "AWS",
+            "icon": "aws"
+        }
+    ]
+}

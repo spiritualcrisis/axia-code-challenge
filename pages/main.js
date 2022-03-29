@@ -16,11 +16,13 @@ const Main = ({ data, loading }) => {
   }, []);
 
   const dataWithoutSelectedApps = useMemo(() => {
-    return data.filter((item) => {
-      return !selectedApps.find((app) => {
-        return item.name === app.name;
+    if (typeof data !== "undefined") {
+      return data.filter((item) => {
+        return !selectedApps.find((app) => {
+          return item.name === app.name;
+        });
       });
-    });
+    }
   }, [data, selectedApps]);
 
   const onSuggestionAdd = (suggestion) => {
@@ -28,10 +30,14 @@ const Main = ({ data, loading }) => {
   };
 
   const onSuggestionRemove = (suggestion) => {
-    const newSelectedApps = selectedApps.filter(
-      (item) => item.name !== suggestion.name
-    );
-    setSelectedApps(newSelectedApps);
+    if (suggestion.length > 0) {
+      const newSelectedApps = selectedApps.filter(
+        (item) => item.name !== suggestion.name
+      );
+      setSelectedApps(newSelectedApps);
+    } else {
+      setSelectedApps([]);
+    }
   };
 
   const onNext = async () => {

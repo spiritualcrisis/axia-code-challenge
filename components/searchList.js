@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const SearchList = ({ data, onSelect }) => {
   const [suggestions, setSuggestions] = useState([]);
   const [wordEntered, setWordEntered] = useState("");
 
-  React.useEffect(() => {
+  useEffect(() => {
     const newSuggestions = data.filter((item) => {
       if (wordEntered.length === 0) return true;
       if (item.name.toLowerCase().startsWith(wordEntered.toLowerCase())) {
