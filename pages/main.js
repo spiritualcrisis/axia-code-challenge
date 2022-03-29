@@ -30,7 +30,7 @@ const Main = ({ data, loading }) => {
   };
 
   const onSuggestionRemove = (suggestion) => {
-    if (suggestion.length > 0) {
+    if (typeof suggestion !== "undefined") {
       const newSelectedApps = selectedApps.filter(
         (item) => item.name !== suggestion.name
       );
